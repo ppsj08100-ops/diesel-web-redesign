@@ -25,11 +25,13 @@ Figma `BLACK` 시안을 HTML, CSS, JavaScript로 구현한 정적 사이트입�
 `index.html`을 브라우저에서 열면 실행됩니다. HTTP 미리보기가 필요한 경우 사이트 파일만 복사한 배포 디렉터리를 사용합니다.
 
 ```sh
-node .openai/build.mjs
+npm run build
 python3 -m http.server 4173 --bind 127.0.0.1 --directory dist
 ```
 
 브라우저에서 `http://127.0.0.1:4173`에 접속합니다.
+
+Vercel은 루트의 `vercel.json` 설정으로 Framework Preset `Other`, Build Command `npm run build`, Output Directory `dist`를 사용합니다. 이 사이트는 일반 `defer` 스크립트와 런타임에 불러오는 에셋 경로를 그대로 유지해야 하므로, Vite 번들 대신 `.openai/build.mjs`가 HTML·`styles/`·`scripts/`·`assets/`를 복사합니다. 로컬 개발에는 기존 `npm run dev`를 사용합니다.
 
 ## 동작
 

@@ -2,6 +2,7 @@
 node_modules/
 dist/
 .sites-runtime/
+.vercel/
 test-results/
 *.tar.gz
 
