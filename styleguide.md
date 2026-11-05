@@ -77,7 +77,7 @@ Figma의 RGB 값을 8비트 HEX로 반올림해 표기했습니다. 투명도는
 | `Hagrid Text` | Light `300`, Regular `400`, Medium `500` | 히어로 보조 카피, 소제목 |
 | `Pretendard` | Thin `100`, Light `300`, Regular `400`, Medium `500` | 한국어 제목·본문, 일부 CTA, 푸터 |
 
-Figma에서 사용하는 실제 패밀리 이름은 `Hagrid Text`입니다. 디자인 컨텍스트 코드에 보이는 `Hagrid_Text` 표기와 구분합니다. 구현 사이트는 `assets/fonts/`의 실제 Hagrid·Hagrid Text·Pretendard 파일을 사용하며, `styles.css`에서 각 굵기와 이탤릭을 명시적으로 연결합니다. 대체 서체는 로딩 중 표시용으로 사용합니다.
+Figma에서 사용하는 실제 패밀리 이름은 `Hagrid Text`입니다. 디자인 컨텍스트 코드에 보이는 `Hagrid_Text` 표기와 구분합니다. 구현 사이트는 `assets/fonts/`의 실제 Hagrid·Hagrid Text·Pretendard 파일을 사용하며, `styles/styles.css`에서 각 굵기와 이탤릭을 명시적으로 연결합니다. 대체 서체는 로딩 중 표시용으로 사용합니다.
 
 ### 원본 타입 스케일
 
@@ -328,7 +328,7 @@ MEDIA의 구현 기준은 `1101px` 이상에서 원본의 2열, `768~1100px`에�
 
 ## 9. CSS 토큰 시작점
 
-아래 코드는 원본 확인값을 재사용하기 위한 **제안 토큰**입니다. 실제 사이트의 스타일과 웹폰트 설정은 프로젝트 루트의 `styles.css`에 구현되어 있습니다. `--layout-reference-width`는 디자인 비교 기준이며 전체 페이지의 고정 폭을 뜻하지 않습니다.
+아래 코드는 원본 확인값을 재사용하기 위한 **제안 토큰**입니다. 실제 사이트의 스타일과 웹폰트 설정은 `styles/styles.css`에 구현되어 있습니다. `--layout-reference-width`는 디자인 비교 기준이며 전체 페이지의 고정 폭을 뜻하지 않습니다.
 
 ```css
 :root {

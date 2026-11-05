@@ -1,10 +1,10 @@
-@font-face{font-family:Hagrid;src:url("assets/fonts/hagrid-light.otf") format("opentype");font-style:normal;font-weight:300;font-display:swap}
-@font-face{font-family:Hagrid;src:url("assets/fonts/hagrid-lightitalic.otf") format("opentype");font-style:italic;font-weight:300;font-display:swap}
-@font-face{font-family:Hagrid;src:url("assets/fonts/hagrid-regular.otf") format("opentype");font-style:normal;font-weight:400;font-display:swap}
-@font-face{font-family:"Hagrid Text";src:url("assets/fonts/hagridtext-light.otf") format("opentype");font-weight:300;font-display:swap}
-@font-face{font-family:"Hagrid Text";src:url("assets/fonts/hagridtext-regular.otf") format("opentype");font-weight:400;font-display:swap}
-@font-face{font-family:"Hagrid Text";src:url("assets/fonts/hagridtext-medium.otf") format("opentype");font-weight:500;font-display:swap}
-@font-face{font-family:Pretendard;src:url("assets/fonts/PretendardVariable.ttf") format("truetype");font-weight:100 900;font-display:swap}
+@font-face{font-family:Hagrid;src:url("../assets/fonts/hagrid-light.otf") format("opentype");font-style:normal;font-weight:300;font-display:swap}
+@font-face{font-family:Hagrid;src:url("../assets/fonts/hagrid-lightitalic.otf") format("opentype");font-style:italic;font-weight:300;font-display:swap}
+@font-face{font-family:Hagrid;src:url("../assets/fonts/hagrid-regular.otf") format("opentype");font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:"Hagrid Text";src:url("../assets/fonts/hagridtext-light.otf") format("opentype");font-weight:300;font-display:swap}
+@font-face{font-family:"Hagrid Text";src:url("../assets/fonts/hagridtext-regular.otf") format("opentype");font-weight:400;font-display:swap}
+@font-face{font-family:"Hagrid Text";src:url("../assets/fonts/hagridtext-medium.otf") format("opentype");font-weight:500;font-display:swap}
+@font-face{font-family:Pretendard;src:url("../assets/fonts/PretendardVariable.ttf") format("truetype");font-weight:100 900;font-display:swap}
 
 :root{color-scheme:dark;--color-bg:#000;--color-text:#fff;--color-muted:#9096a0;--font-display:Hagrid,sans-serif;--font-label:"Hagrid Text",sans-serif;--font-body:Pretendard,sans-serif;--gutter:2.083333vw;--focus:#ffffb3}
 *{box-sizing:border-box}
@@ -69,7 +69,7 @@ em{font-family:var(--font-display);font-weight:300}
 .manifesto-stage{isolation:isolate}
 .story-background{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none;opacity:.3;background:#000}
 .story-background::before,.story-background::after{content:"";position:absolute;inset:0}
-.story-background::before{background:url("assets/footer-black-denim.png") center/cover no-repeat;transform:scale(1.06)}
+.story-background::before{background:url("../assets/footer-black-denim.png") center/cover no-repeat;transform:scale(1.06)}
 .story-background--reverse::before{transform:scale(-1.06,1.06)}
 .story-background::after{background:radial-gradient(ellipse at 50% 42%,rgb(0 0 0 / 28%),transparent 74%),linear-gradient(180deg,#000 0%,rgb(0 0 0 / 24%) 23%,rgb(0 0 0 / 42%) 66%,#000 100%)}
 .story-background canvas{position:absolute;inset:0;display:block;width:100%;height:100%;opacity:0;transition:opacity .45s}

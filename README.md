@@ -5,17 +5,17 @@ Figma `BLACK` 시안을 HTML, CSS, JavaScript로 구현한 정적 사이트입�
 ## 파일
 
 - `index.html`: 전체 화면과 상세 보기 콘텐츠
-- `styles.css`: 로컬 웹폰트, 디자인 토큰, 데스크톱·모바일 스타일
-- `app.js`: 캐러셀, 메뉴, 상세 보기, 선언문·철학 스크롤 효과, 상단 이동
-- `story-background.js`: 선언문·철학 배경의 출렁임과 감쇠
-- `lookbook-scroll.css`, `lookbook-scroll.js`: 패션 사진 자동 시퀀스와 가방 섹션 연결
-- `bags-scroll.css`, `bags-scroll.js`: 고정된 가방 화면의 스크롤별 상품·타이포 전환
-- `bag-photo-transition.js`: 상품 사진의 중앙 슬릿 마스크 전환
-- `commitment-journey.css`, `commitment-journey.js`: 세 타이포 챕터의 입체 공간 이동·절개·조명
-- `badlands-motion.css`, `badlands-motion.js`: 고정된 사진 프레임과 세로 스크롤을 이용한 BADLANDS 장면·타이포 전환
-- `footer-physics.js`: 오벌 D 메탈 배지의 불규칙한 쌓임·잔잔한 움직임과 포인터 상호작용
-- `cta-unified.css`: 전 섹션 VIEW MORE의 실제 화면 크기 통일
-- `collection-hover.css`: MEN·WOMEN 사진 위의 VIEW MORE와 확대 사진 보기
+- `styles/styles.css`: 로컬 웹폰트, 디자인 토큰, 데스크톱·모바일 스타일
+- `scripts/app.js`: 캐러셀, 메뉴, 상세 보기, 선언문·철학 스크롤 효과, 상단 이동
+- `scripts/story-background.js`: 선언문·철학 배경의 출렁임과 감쇠
+- `styles/lookbook-scroll.css`, `scripts/lookbook-scroll.js`: 패션 사진 자동 시퀀스와 가방 섹션 연결
+- `styles/bags-scroll.css`, `scripts/bags-scroll.js`: 고정된 가방 화면의 스크롤별 상품·타이포 전환
+- `scripts/bag-photo-transition.js`: 상품 사진의 중앙 슬릿 마스크 전환
+- `styles/commitment-journey.css`, `scripts/commitment-journey.js`: 세 타이포 챕터의 입체 공간 이동·절개·조명
+- `styles/badlands-motion.css`, `scripts/badlands-motion.js`: 고정된 사진 프레임과 세로 스크롤을 이용한 BADLANDS 장면·타이포 전환
+- `scripts/footer-physics.js`: 오벌 D 메탈 배지의 불규칙한 쌓임·잔잔한 움직임과 포인터 상호작용
+- `styles/cta-unified.css`: 전 섹션 VIEW MORE의 실제 화면 크기 통일
+- `styles/collection-hover.css`: MEN·WOMEN 사진 위의 VIEW MORE와 확대 사진 보기
 - `assets/`: Figma 원본 이미지·SVG와 로컬 웹폰트
 - `styleguide.md`: 원본 스타일 명세
 - `asset-manifest.json`: 이미지 출처 노드와 파일 크기
