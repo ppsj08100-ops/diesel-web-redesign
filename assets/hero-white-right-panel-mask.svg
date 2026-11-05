@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1081" viewBox="0 0 1920 1081">
+  <defs>
+    <filter id="edge" x="-1%" y="-1%" width="102%" height="102%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="0.65"/>
+    </filter>
+  </defs>
+  <!-- Alpha only. The boundary follows the original right wall profile;
+       the filled side is the white region, not the black silhouette. -->
+  <path fill="white" stroke="white" stroke-width="3" stroke-linejoin="round" filter="url(#edge)"
+    d="M 1210 -30
+       L 1187 187
+       L 1305 153
+       L 1337 208
+       C 1364 195 1383 200 1407 218
+       C 1445 244 1479 274 1497 304
+       C 1516 335 1512 365 1496 400
+       L 1517 442
+       C 1526 473 1515 496 1510 521
+       C 1517 549 1534 571 1544 601
+       C 1553 625 1551 642 1540 648
+       L 1512 653
+       C 1514 666 1520 673 1512 682
+       L 1502 689
+       C 1514 701 1518 708 1509 717
+       L 1499 726
+       C 1499 752 1507 777 1488 800
+       C 1470 819 1446 821 1420 819
+       L 1378 818
+       C 1366 834 1364 851 1350 875
+       L 1317 923
+       C 1323 958 1342 1011 1367 1081
+       L 1367 1085 H 1924 V -30 Z"/>
+</svg>

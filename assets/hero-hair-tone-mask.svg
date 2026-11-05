@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1924" height="1151" viewBox="0 0 1924 1151">
+  <defs>
+    <radialGradient id="hair" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(360 170) scale(260 480)">
+      <stop offset="0" stop-color="white"/>
+      <stop offset=".3" stop-color="white" stop-opacity=".9"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1924" height="1151" fill="url(#hair)"/>
+</svg>

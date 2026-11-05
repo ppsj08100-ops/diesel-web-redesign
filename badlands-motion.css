@@ -1,0 +1,34 @@
+.badlands-motion-stage{position:relative}
+.badlands-fixed-meta{display:none}
+
+@media(min-height:600px) and (prefers-reduced-motion:no-preference){
+  .badlands.is-badlands-motion{height:var(--badlands-height,380svh);overflow:clip;background:#000}
+  .is-badlands-motion .badlands-motion-stage{position:sticky;top:0;height:100svh;overflow:clip}
+  .is-badlands-motion [data-carousel-track]{position:absolute;inset:0;display:block;width:100%;height:100%;overflow:visible;scroll-snap-type:none;scroll-behavior:auto;touch-action:pan-y}
+  .is-badlands-motion .badlands-slide{position:absolute;inset:0;width:100%;height:100%;min-height:0;aspect-ratio:auto;overflow:visible;isolation:auto;background:transparent;pointer-events:none}
+  .is-badlands-motion .badlands-slide.is-badlands-current{pointer-events:auto}
+  .is-badlands-motion .badlands-stage{left:50%;top:50%;transform:translate(-50%,-50%) scale(var(--badlands-fit,1));transform-origin:50% 50%}
+  .is-badlands-motion .badlands-slide :is(.badlands-season,.badlands-label){visibility:hidden}
+  .is-badlands-motion .badlands-fixed-meta{display:block;z-index:3;pointer-events:none}
+  .is-badlands-motion :is(.badlands-image,.badlands-shutter){position:absolute;left:577.5px;top:240px;width:765px;height:600px;overflow:clip}
+  .is-badlands-motion .badlands-shutter>span{position:absolute;left:0;width:100%;height:50.1%;background:#000;transform:scaleY(var(--shutter-closed,0))}
+  .is-badlands-motion .badlands-shutter>span:first-child{top:0;transform-origin:center top}
+  .is-badlands-motion .badlands-shutter>span:last-child{bottom:0;transform-origin:center bottom}
+  .is-badlands-motion .badlands-title{pointer-events:none}
+  .is-badlands-motion .badlands-title-line{opacity:var(--title-first-opacity,1);transform:translateY(var(--title-first-y,0px))}
+  .is-badlands-motion .badlands-title-word{opacity:var(--title-second-opacity,1);transform:translateY(var(--title-second-y,0px))}
+  .is-badlands-motion .badlands-copy{opacity:var(--copy-opacity,1);transform:translateY(calc(-50% + var(--copy-y,0px)))}
+  .is-badlands-motion .badlands-cta{opacity:var(--copy-opacity,1)}
+  .is-badlands-motion .badlands-controls{left:var(--gutter);right:auto;bottom:20px}
+  .is-badlands-transitioning .badlands-shutter>span,.is-badlands-transitioning :is(.badlands-title-line,.badlands-title-word){will-change:transform,opacity}
+}
+
+@media(max-width:767px) and (min-height:600px) and (prefers-reduced-motion:no-preference){
+  .is-badlands-motion .badlands-stage{inset:0;width:100%;height:100%;transform:none}
+  .is-badlands-motion .badlands-slide .badlands-image,.is-badlands-motion .badlands-shutter{left:11%;top:24%;width:78%;height:auto;aspect-ratio:765/600}
+  .is-badlands-motion .badlands-slide .badlands-title{left:4%;top:43%;width:92%;height:2em;--badlands-title-size:8vw}
+  .is-badlands-motion .badlands-slide .badlands-copy{left:45%;top:66%;width:50%;font-size:12px;line-height:1.7;transform:translateY(var(--copy-y,0px))}
+  .is-badlands-motion .badlands-cta{left:50%;top:auto;bottom:8%}
+  .is-badlands-motion .badlands-fixed-meta .badlands-label{left:8%;top:19%;font-size:9px}
+  .is-badlands-motion .badlands-controls{left:24px;bottom:16px}
+}

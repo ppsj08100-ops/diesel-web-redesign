@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1081" viewBox="0 0 1920 1081" fill="none">
+  <defs>
+    <linearGradient id="right-edge-fade" x1="0" y1="0" x2="0" y2="1081" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="white" stop-opacity="0"/>
+      <stop offset="0.04" stop-color="white"/>
+      <stop offset="0.96" stop-color="white"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="right-band-feather" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+  <!-- An alpha band around the right wall silhouette. It stays well clear of
+       the central face and hair. At rest the duplicate photo exactly covers
+       its source; the band hides the old edge during small translations. -->
+  <path d="M 1210 -30
+           L 1187 187
+           L 1305 153
+           L 1337 208
+           C 1364 195 1383 200 1407 218
+           C 1445 244 1479 274 1497 304
+           C 1516 335 1512 365 1496 400
+           L 1517 442
+           C 1526 473 1515 496 1510 521
+           C 1517 549 1534 571 1544 601
+           C 1553 625 1551 642 1540 648
+           L 1512 653
+           C 1514 666 1520 673 1512 682
+           L 1502 689
+           C 1514 701 1518 708 1509 717
+           L 1499 726
+           C 1499 752 1507 777 1488 800
+           C 1470 819 1446 821 1420 819
+           L 1378 818
+           C 1366 834 1364 851 1350 875
+           L 1317 923
+           C 1323 958 1342 1011 1367 1081"
+        stroke="url(#right-edge-fade)" stroke-width="112" stroke-linecap="round" stroke-linejoin="round" filter="url(#right-band-feather)"/>
+</svg>
